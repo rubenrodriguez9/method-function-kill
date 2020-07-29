@@ -39,7 +39,8 @@ const newPerson = function(firstName, lastName, age, married = false){
     divorce: function(suitor){
       this.married = false;
       suitor.married = false;
-      
+      delete this.spouseName;
+      delete suitor.spouseName;
 
       
     }
